@@ -110,7 +110,8 @@ end alfred_script</string>
 			<key>config</key>
 			<dict>
 				<key>applescript</key>
-				<string>on alfred_script(q)	tell application "Fantastical" to activate	tell application "System Events"		keystroke "1" using command down	end tellend alfred_script</string>
+				<string>on alfred_script(q)	tell application "Fantastical" to activate	tell application "System Events"		keystroke "1" using command down
+		keystroke "t" using command down	end tellend alfred_script</string>
 				<key>cachescript</key>
 				<false/>
 			</dict>
