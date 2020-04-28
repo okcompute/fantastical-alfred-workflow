@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.okcompute.fantastical</string>
+	<key>category</key>
+	<string>Productivity</string>
+	<key>connections</key>
+	<dict>
+		<key>77269867-DF3F-43FA-AD1A-893B32E5B492</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>0546EACF-E513-4D34-A3A5-4D34B87B616E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>B5618B35-46D3-465B-87B3-D4257C6F02A8</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>0E5CEB4C-FA08-4A0E-A08B-BE9FCBAE4F27</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Pascal Lalancette</string>
+	<key>description</key>
+	<string>Learn how to connect a keyword to different actions and outputs</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Fantastical</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>applescript</key>
+				<string>on alfred_script(q)
+	tell application "Fantastical"
+    		parse sentence {q}
+	end tell
+end alfred_script</string>
+				<key>cachescript</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.applescript</string>
+			<key>uid</key>
+			<string>0546EACF-E513-4D34-A3A5-4D34B87B616E</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>f</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Create a new calendar event in Fantastical</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>77269867-DF3F-43FA-AD1A-893B32E5B492</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>fa</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Launch Fantastical on today's view</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>B5618B35-46D3-465B-87B3-D4257C6F02A8</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>applescript</key>
+				<string>on alfred_script(q)	tell application "Fantastical" to activate	tell application "System Events"		keystroke "1" using command down	end tellend alfred_script</string>
+				<key>cachescript</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.applescript</string>
+			<key>uid</key>
+			<string>0E5CEB4C-FA08-4A0E-A08B-BE9FCBAE4F27</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>Keywords are one of Alfred's most commonly used and most useful ways of launching actions. Set a keyword and connect it to the action(s) you want to perform.
+
+Type your keyword into Alfred, followed by your input text if needed, and you'll be on your way to boosting your productivity!</string>
+	<key>uidata</key>
+	<dict>
+		<key>0546EACF-E513-4D34-A3A5-4D34B87B616E</key>
+		<dict>
+			<key>xpos</key>
+			<integer>380</integer>
+			<key>ypos</key>
+			<integer>100</integer>
+		</dict>
+		<key>0E5CEB4C-FA08-4A0E-A08B-BE9FCBAE4F27</key>
+		<dict>
+			<key>xpos</key>
+			<integer>405</integer>
+			<key>ypos</key>
+			<integer>265</integer>
+		</dict>
+		<key>77269867-DF3F-43FA-AD1A-893B32E5B492</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>xpos</key>
+			<integer>180</integer>
+			<key>ypos</key>
+			<integer>100</integer>
+		</dict>
+		<key>B5618B35-46D3-465B-87B3-D4257C6F02A8</key>
+		<dict>
+			<key>xpos</key>
+			<integer>190</integer>
+			<key>ypos</key>
+			<integer>265</integer>
+		</dict>
+	</dict>
+	<key>version</key>
+	<string>1.0</string>
+	<key>webaddress</key>
+	<string>https://www.alfredapp.com</string>
+</dict>
+</plist>
